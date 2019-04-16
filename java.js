@@ -22,12 +22,19 @@ function drawBar(ctx, upperLeftCornerX, upperLeftCornerY, width, height,color){
 }
 
 var myVinyls = {
-    "Low-and-middle-income countries of the African Region - 591": 591,
-    "Low-and-middle-income countries of the European Region - 427": 427,
-    "Low-and-middle-income countries of the South-East Asia Region - 775": 775 ,
-    "High income countries - 403": 403,
-    "Low-and-middle-income countries of the Western Pacific Region - 124": 124,
-    "Low-and-middle-income countries of the Americas - 584": 584,
+    "World Average - 38": 38,
+    "Northern Africa - 55": 55,
+    "Sub-Saharan Africa - 36": 36 ,
+    "North America and Europe - 12": 12,
+    "North America - 7": 7,
+    "Latin America & Caribbean - 16": 16,
+    "Central & Southern Asia - 60": 60,
+    "Central Asia - 22": 22,
+    "Southern Asia - 62": 62,
+    "Eastern & SouthEastern Asia - 38": 38,
+    "SouthEastern Asia - 21": 21,
+    "Eastern Asia - 45": 45,
+    "Europe - 14": 14,
 };
 
 var Barchart = function(options){
@@ -122,8 +129,8 @@ var myBarchart = new Barchart(
     {
         canvas:myCanvas,
         seriesName:"Deaths caused by climate change in 2004",
-        padding:30,
-        gridScale:100,
+        padding:25,
+        gridScale:10,
         gridColor:"#eeeeee",
         data:myVinyls,
         colors:["#a55ca5","#67b6c7", "#bccd7a","#eb9743", "yellow", "red"]
