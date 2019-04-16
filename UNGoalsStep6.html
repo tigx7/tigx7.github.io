@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UN Goals Step 6</title>
+
+<style>
+	body {
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.flip-box {
+	  background-color: transparent;
+	  width: 300px;
+	  height: 300px;
+	  perspective: 1000px;
+	}
+
+	.flip-box-inner {
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+	  text-align: center;
+	  transition: transform 0.8s;
+	  transform-style: preserve-3d;
+	}
+
+	.flip-box:hover .flip-box-inner {
+	  transform: rotateY(180deg);
+	}
+
+	.flip-box-front, .flip-box-back {
+	  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	  backface-visibility: hidden;
+	}
+
+	.flip-box-front {
+	  background-color: #bbb;
+	  color: black;
+	}
+
+	.flip-box-back {
+	  color: white;
+	  transform: rotateY(180deg);
+	}
+
+
+	.flex-container {
+	  display: flex;
+	  flex-wrap: wrap;
+	  background-color: DodgerBlue;
+	  align-content: center;
+	  justify-content: center;
+	  margin-top: 200px;
+	}
+
+	.flex-container > div {
+	  background-color: #f1f1f1;
+	  margin: 10px;
+	  padding: 20px;
+	  font-size: 30px;
+	}
+
+
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	.topbar{
+		overflow-color:white;
+		background-color:white;
+		position: fixed;
+		top:0;
+		left:0;
+		width:100%;
+		z-index:1000;
+
+	}
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+
+
+<div class = "topbar">
+	<picture>
+	  <source media="(min-width: 940px)" srcset="images/Logohoriz.png">
+	  <img class = "center" src="images/Logosquare.png" alt="UN Goals" style="width:auto;">
+	</picture>
+</div>
+
+
+
+
+
+<div class ="flex-container">
+
+	<div class="flip-box">
+	  <div class="flip-box-inner">
+	    <div class="flip-box-front">
+	      <img src="images/UN Icon 1.png" alt="Avatar" style="width:300px; height:300px;"/>
+	    </div>
+	    <div class="flip-box-back" style ="background-color: #EB1C2D;">
+	      <h3>No Poverty</h3>
+	      <p>Is raising the minumum wage of the entire world practical and effective?</p>
+	    </div>
+	  </div>
+	</div>
+
+
+	<div class="flip-box">
+	  <div class="flip-box-inner">
+	    <div class="flip-box-front">
+	      <img src="images/UN Icon 2.png" alt="Avatar" style="width:300px; height:300px;"/>
+	    </div>
+	    <div class="flip-box-back" style ="background-color: #d3a029;">
+	      <h3>Zero Hunger</h3>
+	      <p>Is birth control a solution?</p>
+	    </div>
+	  </div>
+	</div>
+
+
+	<div class="flip-box">
+	  <div class="flip-box-inner">
+	    <div class="flip-box-front">
+	      <img src="images/UN Icon 3.png" alt="Avatar" style="width:300px; height:300px;"/>
+	    </div>
+	    <div class="flip-box-back" style ="background-color: #00a549;">
+	      <h3>Good Health and wellbeing</h3>
+	      <p>Is educating people about the importance of wellbeing the solution?</p>
+	    </div>
+	  </div>
+	</div>
+
+
+	<div class="flip-box">
+	  <div class="flip-box-inner">
+	    <div class="flip-box-front">
+	      <img src="images/UN Icon 4.png" alt="Avatar" style="width:300px; height:300px;"/>
+	    </div>
+	    <div class="flip-box-back" style ="background-color: #d30021;">
+	      <h3>Quality Education</h3>
+	      <p>Is making school funding a priority a solution?</p>
+	    </div>
+	  </div>
+	</div>
+
+
+	<div class="flip-box">
+	  <div class="flip-box-inner">
+	    <div class="flip-box-front">
+	      <img src="images/UN Icon 5.png" alt="Avatar" style="width:300px; height:300px;"/>
+	    </div>
+	    <div class="flip-box-back" style ="background-color: #FF0000;">
+	      <h3>Gender Equality</h3>
+	      <p>Is stopping violence against women a step towards gender equality?</p>
+	    </div>
+	  </div>
+	</div>
+
+
+	<div class="flip-box">
+	  <div class="flip-box-inner">
+	    <div class="flip-box-front">
+	      <img src="images/UN Icon 6.png" alt="Avatar" style="width:300px; height:300px;"/>
+	    </div>
+	    <div class="flip-box-back" style ="background-color: #00B0DC;">
+	      <h3>Clean Water and sanitation</h3>
+	      <p>Is education about sanitation a solution?</p>
+	    </div>
+	  </div>
+	</div>
+
+
+	<div class="flip-box">
+	  <div class="flip-box-inner">
+	    <div class="flip-box-front">
+	      <img src="images/UN Icon 7.png" alt="Avatar" style="width:300px; height:300px;"/>
+	    </div>
+	    <div class="flip-box-back" style ="background-color: #FFB400;">
+	      <h3>Affordable and clean energy</h3>
+	      <p>Is switching to green power a solution?</p>
+	    </div>
+	  </div>
+	</div>
+
+
+	<div class="flip-box">
+		  <div class="flip-box-inner">
+		    <div class="flip-box-front">
+		      <img src="images/UN Icon 8.png" alt="Avatar" style="width:300px; height:300px;"/>
+		    </div>
+		    <div class="flip-box-back" style ="background-color: #FFB400;">
+		      <h3>Decent Work and Economic Growth</h3>
+		      <p>Is switching to green power a solution?</p>
+		    </div>
+		  </div>
+		</div>
+
+
+	<div class="flip-box">
+		  <div class="flip-box-inner">
+		    <div class="flip-box-front">
+		      <img src="images/UN Icon 9.png" alt="Avatar" style="width:300px; height:300px;"/>
+		    </div>
+		    <div class="flip-box-back" style ="background-color: #ff6b19;">
+		      <h3>Industry, Innovation and Infrastructure</h3>
+		      <p>Is providing new jobs a solution?</p>
+		    </div>
+		  </div>
+		</div>
+
+	<div class="flip-box">
+		  <div class="flip-box-inner">
+		    <div class="flip-box-front">
+		      <img src="images/UN Icon 9.png" alt="Avatar" style="width:300px; height:300px;"/>
+		    </div>
+		    <div class="flip-box-back" style ="background-color: #ff6b19;">
+		      <h3>Industry, Innovation and Infrastructure</h3>
+		      <p>Is providing new jobs a solution?</p>
+		    </div>
+		  </div>
+		</div>
+	
+	<div class="flip-box">
+		  <div class="flip-box-inner">
+		    <div class="flip-box-front">
+		      <img src="images/UN Icon 10.png" alt="Avatar" style="width:300px; height:300px;"/>
+		    </div>
+		    <div class="flip-box-back" style ="background-color: #F5007F;">
+		      <h3>Reduced Inequalities</h3>
+		      <p>Is schoool education a solution?</p>
+		    </div>
+		  </div>
+		</div>
+
+
+	<div class="flip-box">
+		  <div class="flip-box-inner">
+		    <div class="flip-box-front">
+		      <img src="images/UN Icon 11.png" alt="Avatar" style="width:300px; height:300px;"/>
+		    </div>
+		    <div class="flip-box-back" style ="background-color: #FF9800;">
+		      <h3>Sustainable Cities and Communities</h3>
+		      <p>Is promoting green energy a solution?</p>
+		    </div>
+		  </div>
+		</div>
+
+
+	<div class="flip-box">
+		  <div class="flip-box-inner">
+		    <div class="flip-box-front">
+		      <img src="images/UN Icon 12.png" alt="Avatar" style="width:300px; height:300px;"/>
+		    </div>
+		    <div class="flip-box-back" style ="background-color: #D78B07;">
+		      <h3>Responsible Consumption and Production</h3>
+		      <p>Is promoting electric cars a solution?</p>
+		    </div>
+		  </div>
+		</div>
+
+
+	<div class="flip-box">
+		  <div class="flip-box-inner">
+		    <div class="flip-box-front">
+		      <img src="images/UN Icon 13.png" alt="Avatar" style="width:300px; height:300px;"/>
+		    </div>
+		    <div class="flip-box-back" style ="background-color: #347D3E;">
+		      <h3>Climate Action</h3>
+		      <p>Is raising awareness on our environment enough to sustain the climate?</p>
+		    </div>
+		  </div>
+		</div>
+
+
+
+	<div class="flip-box">
+		  <div class="flip-box-inner">
+		    <div class="flip-box-front">
+		      <img src="images/UN Icon 14.png" alt="Avatar" style="width:300px; height:300px;"/>
+		    </div>
+		    <div class="flip-box-back" style ="background-color: #007BBF;">
+		      <h3>Life below water</h3>
+		      <p>Is setting a limit on fishing a solution?</p>
+		    </div>
+		  </div>
+		</div>
+
+
+	<div class="flip-box">
+		  <div class="flip-box-inner">
+		    <div class="flip-box-front">
+		      <img src="images/UN Icon 15.png" alt="Avatar" style="width:300px; height:300px;"/>
+		    </div>
+		    <div class="flip-box-back" style ="background-color: #00BB49;">
+		      <h3>Life on land</h3>
+		      <p>Is setting a limit to hunting the solution?</p>
+		    </div>
+		  </div>
+		</div>
+
+
+	<div class="flip-box">
+		  <div class="flip-box-inner">
+		    <div class="flip-box-front">
+		      <img src="images/UN Icon 16.png" alt="Avatar" style="width:300px; height:300px;"/>
+		    </div>
+		    <div class="flip-box-back" style ="background-color: #00528D;">
+		      <h3>Peace, Justice and strong institutions</h3>
+		      <p>Is getting rid of the death penalty helpful?</p>
+		    </div>
+		  </div>
+		</div>
+
+
+	<div class="flip-box">
+		  <div class="flip-box-inner">
+		    <div class="flip-box-front">
+		      <img src="images/UN Icon 17.png" alt="Avatar" style="width:300px; height:300px;"/>
+		    </div>
+		    <div class="flip-box-back" style ="background-color: #18316A;">
+		      <h3>Partnership for the goals</h3>
+		      <p>Should teamwork be promoted more?</p>
+		    </div>
+		  </div>
+		</div>
+
+
+
+
+
+</div>
+
+
+</body>
+</html>
